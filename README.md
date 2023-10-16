@@ -7,9 +7,11 @@ npm i
 npm run dev
 ```
 
-To run frondend
+To run frontend
 ```
 cd frontend
 npm i
 npm run dev
 ```
+
+[Demo Video](https://youtu.be/kMqgrvK6NS4/)
