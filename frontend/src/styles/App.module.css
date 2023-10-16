@@ -1,0 +1,47 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.mainbar {
+    width: 100%;
+    max-width: 45rem;
+}
+
+.searchRes {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary-container);
+}
+
+.searchResTitle, .searchResIcon {
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: var(--primary-text);
+}
+
+@media only screen and (max-width: 1080px) {
+    .mainbar {
+        width: calc(100% - 18rem);
+    }
+  }
+
+  @media only screen and (max-width: 840px) {
+    .mainbar {
+        width: 100%;
+    }
+
+    .searchResTitle, .searchResIcon {
+        font-size: 1rem !important;
+    }
+  }

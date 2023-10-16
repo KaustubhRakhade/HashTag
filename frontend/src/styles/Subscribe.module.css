@@ -1,0 +1,91 @@
+.subscribeBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    color: var(--primary-text);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+.subheader {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    color: var(--secondary-text);
+}
+
+.emailInput {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    border-radius: 0.25rem;
+    border: solid var(--primary-text) 0.1rem;
+    transition: all 0.2s ease-in-out;
+    background: var(--background);
+    color: var(--primary-text);
+
+}
+
+.emailInput.error {
+    border: solid rgb(var(--error)) 0.1rem;
+    background: rgba(var(--error), 0.1);
+    color: rgb(var(--error));
+    transition: all 0.2s ease-in-out;
+}
+
+.emailInput.error::placeholder {
+    color: rgba(var(--error), 0.7);
+}
+
+
+.errorText {
+    color: rgb(var(--error));
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin: 0 0 1rem 0.25rem;
+    font-weight: bold;
+    height: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.errorText.error {
+    height: 1rem;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.subButton {
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    color: var(--background);
+    background-color: var(--primary-text);
+    border-radius: 2rem;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        font-size: 1rem;
+    }
+
+    .subheader, .subButton, .emailInput {
+        font-size: 0.9rem;
+    }
+
+    .errorText {
+        font-size: 0.75rem;
+    }
+
+    .emailInput {
+        padding: 0.25rem 0.5rem;
+    }
+}
+

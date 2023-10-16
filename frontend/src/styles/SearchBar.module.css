@@ -1,0 +1,52 @@
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2.5rem;
+    width: 8rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    background: var(--primary-container);
+    transition: all 0.25s ease-in-out;
+    
+}
+
+.searchInput {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0 0.5rem;
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--primary-text);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.searchBar:focus-within,
+.searchBar.notEmpty {
+    width: 20rem;
+    height: 3rem;
+}
+
+.icon {
+    color: var(--tertiary-text);
+}
+
+@media only screen and (max-width: 480px) {
+    .searchBar {
+        height: 2rem;
+        width: 7rem;
+        padding: 0 0.5rem;
+    }
+    .searchBar:focus-within,
+    .searchBar.notEmpty {
+        width: 15rem;
+        height: 2.5rem;
+    }
+    .searchInput {
+        padding: 0 0.25rem;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,14 @@
+.app {
+    width: 100%;
+    background: #111;;
+    --background: #111;
+    --primary-container: #292929;
+    --border: #333;
+    --primary-text: #eee;
+    --secondary-text: #bbb;
+    --tertiary-text: #999;
+    --link-text: rgb(135, 135, 199);
+    --error: 214, 66, 66;
+    --accent: #ffc017;
+    transition: all 0.5s;
+}

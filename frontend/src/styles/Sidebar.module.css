@@ -1,0 +1,28 @@
+.sideBar {
+    width: 25rem;
+    height: 40rem;
+    max-width: 25rem;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-left: solid var(--border) 0.1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.disclaimer {
+    color: var(--secondary-text);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1080px) {
+    .sideBar {
+        width: 18rem;
+    }
+  }
+
+@media only screen and (max-width: 840px) {
+    .sideBar {
+        display: none;
+    }
+  }

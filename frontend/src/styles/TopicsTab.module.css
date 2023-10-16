@@ -1,0 +1,73 @@
+.topicsTab {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: solid 0.1rem var(--border);
+  color: var(--secondary-text);
+  position: relative;
+}
+
+.slider {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.slider {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.topic {
+  padding: 0.5rem 1rem;
+  font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+  border-bottom: solid 0.1rem transparent;
+}
+
+.topic.active {
+  font-weight: bold;
+  border-bottom: solid 0.1rem var(--secondary-text);
+}
+
+.slideLeft, .slideRight {
+  position: absolute;
+  bottom: 0.1rem;
+  background-color: var(--background);
+  box-shadow: 0 -0.25rem 0.25rem 0.25rem var(--background);
+
+}
+
+.slideLeft { left: 0; }
+.slideRight { right: 0; }
+
+.subscribeMobile {
+  width: 100%;
+  margin: 0 auto -1rem auto;
+  max-width: 30rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: none;
+}
+
+@media only screen and (max-width: 840px) {
+  .subscribeMobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .subscribeMobile {
+    margin: 0 0 -1rem 0;
+    padding: 1rem;
+  }
+}

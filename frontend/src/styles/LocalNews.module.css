@@ -1,0 +1,22 @@
+.localNews {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: var(--primary-container);
+}
+
+.city {
+    padding: 0.5rem 0.25rem;
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    color: var(--secondary-text);
+}
+
+.city:hover,
+.city.active {
+    font-weight: bold;
+}

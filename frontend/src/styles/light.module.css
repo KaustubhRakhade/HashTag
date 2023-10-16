@@ -1,0 +1,14 @@
+.app {
+    width: 100%;
+    background: #fff;;
+    --background: #fff;
+    --primary-container: #f8f8f8;
+    --border: #f2f2f2;
+    --primary-text: #292929;
+    --secondary-text: #555;
+    --tertiary-text: #888;
+    --link-text: #447;
+    --error: 214, 66, 66;
+    --accent: #ffc017;
+    transition: all 0.5s;
+}
