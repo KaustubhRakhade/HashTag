@@ -1,6 +1,7 @@
 const convertXML = require("xml-js")
 const { TOPIC_PROVIDERS } = require("./constants")
 const Feeditem = require("./models/feeditem")
+const fetch = require("node-fetch");
 
 const scrapeData = (item, topic) => {
 
