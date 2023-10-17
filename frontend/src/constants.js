@@ -46,7 +46,8 @@ const CITIES = [
     "Thiruvananthapuram"
 ]
 
-const API_URL =  "http://localhost:4000/api"
+// const API_URL =  "http://localhost:4000/api"
+const API_URL =  "https://hashtag-server.onrender.com/api"
 
 const FEED_API = API_URL + "/feed/"
 const SEARCH_API = API_URL + "/search/"
